@@ -10,19 +10,21 @@ namespace _0404A1Weizenkornlegende
     {
         static void Main(string[] args)
         {
-            double w=1;
+            double w = 1; // koerne je feld
+            double s = 0; // mitlaufende summe
             int i = 0;
 
             do
             {
                 Console.WriteLine("Auf dem {0,2}. Feld liegen {1} Körner",i+1, w);
                 w = w * 2;
+                s = s + w;
                 i++;
             } while (i < 64);
 
             Console.WriteLine();
 
-            double tonnen =  w / 1000 / 1000 / 0.5;
+            double tonnen =  s / 1000 / 1000 / 0.5;
             Console.WriteLine("Das macht etwa {0} Tonnen Getreide.", tonnen);
 
             Console.WriteLine();
