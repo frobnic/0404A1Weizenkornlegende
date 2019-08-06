@@ -26,7 +26,7 @@ namespace _0404A1Weizenkornlegende
             Console.WriteLine("Das macht etwa {0} Tonnen Getreide.", tonnen);
 
             Console.WriteLine();
-            double stau = tonnen / 25 * 16 / 1000;
+            double stau = tonnen / 25 * 19 / 1000;
             Console.WriteLine("Der Stau wäre etwa {0:F2} km lang.", stau);
 
             Console.WriteLine();
